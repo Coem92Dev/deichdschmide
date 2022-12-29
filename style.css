@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("Imgs/BG.webp");
+    background-color: black;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+html {
+    height: 100%;
+}
+
+.wrapper {
+    margin: 0px auto;
+    width: 1000px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+.text {
+
+    font-size: 20px;
+    padding-left: 20px;
+    position: relative;
+
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1::first-letter {
+    font-size: 200%;
+    
+}
+
+.BGT {
+
+    background-image: url("Imgs/BGT.jpg");
+    height: 200px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.BG {
+
+    background-image: url("Imgs/BG.jpg");
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.BGB {
+    margin-top: -200px;
+    position: relative;
+    
+    background-image: url("Imgs/BGB.jpg");
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clear: both;
+
+}
+
+.main {
+    min-height: 80%;
+    overflow: auto;
+    padding-bottom: 200px;
+    
+}
+
+.image-grid{
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height:300 px;
+    
+    box-sizing: border-box;
+    padding: var(--gap);
+    
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols),300px);
+    grid-auto-rows: var(--row-height);
+
+    gap: var(--gap);
+
+
+}
+.image-grid > img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+    box-shadow: 0 0 50px #000;
+    object-fit:cover;
+    
+}
+
+
+.image-grid-col-2{
+    grid-column: span 2;
+
+}
+.image-grid-row-2{
+    grid-row: span 2;
+
+}
+
+@media screen and (max-width: 1024px){
+    .image-grid{
+        --num-cols: 2;
+        --row-height:100 px;
+    }
+}
+
+.center{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.social-icon{
+    color:lightslategray;
+    transition: 0.2s;
+    position: relative;
+    top: 120px;
+    
+}
+.social-icon:hover{
+    color: azure;
+}
+ion-icon {
+    font-size: 32px;
+  }
+.contact{
+    color:lightslategray;
+
+    position: relative;
+    align-items: center;
+    top: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+}
